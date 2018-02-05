@@ -34,11 +34,15 @@ namespace MyUWPGraphApp01
         public MainPage()
         {
             this.InitializeComponent();
+
+            //initialize the graph connection
+            //should leverage existing logged in user and only prompt first time for consent
+            MSGraph = MicrosoftGraphContext.GetAuthenticatedClient(App.Current.Resources["ida:ClientId"].ToString());
+
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            MSGraph = MicrosoftGraphContext.GetAuthenticatedClient(App.Current.Resources["ida:ClientId"].ToString());
 
             var user = await MSGraph.Me.Request().GetAsync();
             TextBlock1.Text = String.Format("{0} - '{1}'", user.DisplayName, user.Id);

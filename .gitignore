@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/MyUWPGraphApp01/v15/sqlite3
+/.vs/MyUWPGraphApp01/v15/Server/sqlite3
+/MyUWPGraphApp01/bin/x86/Debug
+/MyUWPGraphApp01/obj

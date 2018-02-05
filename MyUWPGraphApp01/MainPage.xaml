@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="MyUWPGraphApp01.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyUWPGraphApp01"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,4,1">
+        <Button Content="Get Me" HorizontalAlignment="Left" Height="113" Margin="121,173,0,0" VerticalAlignment="Top" Width="284" Click="Button_Click"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Height="75" Margin="127,317,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="804" FontSize="20"/>
+        <Button Content="Get Manager" HorizontalAlignment="Left" Height="112" Margin="450,173,0,0" VerticalAlignment="Top" Width="247" Click="Button_Click_1"/>
+    </Grid>
+</Page>
